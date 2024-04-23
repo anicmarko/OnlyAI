@@ -22,18 +22,17 @@ export async function POST (req: Request) {
         }
 
         if(!messages){
-            return new NextResponse("Messages are required", {status: 500});
+            return new NextResponse("Messages are required", {status: 400});
         }
 
-         const response = await openai.chat.completions.create(
+        const response = await openai.chat.completions.create(
             {
                 model:"gpt-3.5-turbo",
                 messages
             }
-        ); 
+        );
 
-
-        return NextResponse.json({role:'assistant', content: response.choices[0].message});
+        return NextResponse.json(response.choices[0].message);
 
     } catch (error) {
         console.log("[CONVERSATION_ERROR]",error);
