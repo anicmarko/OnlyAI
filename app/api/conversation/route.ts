@@ -33,12 +33,13 @@ export async function POST (req: Request) {
         }
 
 
-        const response = await openai.chat.completions.create(
+       const response = await openai.chat.completions.create(
             {
                 model:"gpt-3.5-turbo",
                 messages
             }
         );
+        
 
         await increaseApiLimit();
 
