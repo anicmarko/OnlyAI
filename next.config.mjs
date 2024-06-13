@@ -2,7 +2,8 @@
 const nextConfig = {
     images:{
         domains: [
-            "cdn.openai.com"
+            "cdn.openai.com",
+            "oaidalleapiprodscus.blob.core.windows.net"        
         ]
     }
 };
