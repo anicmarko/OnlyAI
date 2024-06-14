@@ -98,8 +98,8 @@ export const ProModal = () => {
                         variant="pro"
                         onClick={onSubscribe}
                     >
-                        Upgrade
-                        <Zap className="w-4 h-4 ml-2 fill-white"/>
+                       {loading ? 'Loading...' : 'Upgrade'}
+                       {!loading && <Zap className="w-4 h-4 ml-2 fill-white"/>}
                     </Button>
                 </DialogFooter>
             </DialogContent>
