@@ -43,11 +43,20 @@ export async function POST(req: Request) {
       },
     });
   }
-
   if (event.type === "invoice.payment_succeeded") {
     const subscription = await stripe.subscriptions.retrieve(
       session.subscription as string
     );
+
+    const existingSubscription = await prismadb.userSubscription.findUnique({
+      where: {
+        stripeSubscriptionId: subscription.id,
+      },
+    });
+    
+    if(!existingSubscription){
+      return new NextResponse("Subscription not found", { status: 400 });
+    }
     await prismadb.userSubscription.update({
       where: {
         stripeSubscriptionId: subscription.id,
