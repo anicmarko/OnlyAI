@@ -13,7 +13,7 @@ const openai = new OpenAI({
 const instructionMessage: ChatCompletionMessageParam = {
   role: "system",
   content:
-    "You are a code generator. You must answer only in markdown code snippets. use code comments for explanations.",
+  "You are a knowledgeable assistant. Provide detailed and clear explanations in your responses. Use markdown for formatting and include examples where necessary.",
 };
 
 export async function POST(req: Request) {
@@ -49,7 +49,6 @@ export async function POST(req: Request) {
     if (!isPro) {
       await increaseApiLimit();
     }
-
     return NextResponse.json(response.choices[0].message);
   } catch (error) {
     console.log("[CODE_ERROR]", error);
