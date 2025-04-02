@@ -1,4 +1,4 @@
-# ONLY-AI
+# OnlyAi
 
 > *Empower Creativity with Intelligent AI Solutions*
 
