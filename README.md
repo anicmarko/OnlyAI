@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ONLYAI
+
+> *Empower Creativity with Intelligent AI Solutions*
+
+<div align="center">
+  
+  **Built with:**
+  
+  ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white)
+  ![Replicate](https://img.shields.io/badge/Replicate-000000.svg?style=flat&logo=Replicate&logoColor=white)
+  ![npm](https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white)
+  ![PostCSS](https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&logo=PostCSS&logoColor=white)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black)
+  ![React](https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6.svg?style=flat&logo=TypeScript&logoColor=white)
+  ![Prisma](https://img.shields.io/badge/Prisma-2D3748.svg?style=flat&logo=Prisma&logoColor=white)
+  ![Zod](https://img.shields.io/badge/Zod-3E67B1.svg?style=flat&logo=Zod&logoColor=white)
+  ![Stripe](https://img.shields.io/badge/Stripe-635BFF.svg?style=flat&logo=Stripe&logoColor=white)
+  ![ESLint](https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white)
+  ![OpenAI](https://img.shields.io/badge/OpenAI-412991.svg?style=flat&logo=OpenAI&logoColor=white)
+  ![Axios](https://img.shields.io/badge/Axios-5A29E4.svg?style=flat&logo=Axios&logoColor=white)
+  ![CSS](https://img.shields.io/badge/CSS-663399.svg?style=flat&logo=CSS&logoColor=white)
+  ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-EC5990.svg?style=flat&logo=React-Hook-Form&logoColor=white)
+  
+</div>
+
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+
+---
+
+## Overview
+OnlyAI is a powerful framework designed to streamline the development of AI-driven applications, enabling developers to create intuitive user experiences effortlessly.
+
+### Why OnlyAI?
+This project simplifies the creation of intelligent applications while ensuring robust performance and security. The core features include:
+
+- 🎨 **AI-driven application framework:** Simplifies the development process, allowing you to focus on building features.
+- 🔒 **Robust user authentication:** Ensures secure access and management of user accounts, addressing common security concerns.
+- ⚡ **Seamless backend integration:** Connects effortlessly with APIs like OpenAI and Stripe, enhancing functionality without complexity.
+- 🎉 **Dynamic UI components:** Provides reusable components that improve user experience and reduce development time.
+- 🌈 **Tailwind CSS integration:** Promotes a utility-first approach to styling, ensuring design consistency and speeding up UI development.
+- 📊 **API limit management:** Helps control resource usage, preventing overages and ensuring smooth application performance.
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+This project requires the following dependencies:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Programming Language:** TypeScript
+- **Package Manager:** npm
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
+Build OnlyAI from the source and install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/anicmarko/OnlyAI
+   ```
+2. **Navigate to the project directory:**
+   ```sh
+   cd OnlyAI
+   ```
+3. **Install the dependencies:**
+   ```sh
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Usage
+Run the project with:
+   ```sh
+   npm start
+   ```
+---
 
-## Learn More
+[⬆ Return to Top](#top)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
